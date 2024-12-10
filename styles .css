@@ -1,0 +1,307 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: orange;
+    color: white;
+}
+
+header {
+    position: fixed;
+    z-index: 100%;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: orange;
+}
+
+.navbar {
+    padding: 20px 90px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: start;
+}
+
+.money {
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+.money .good {
+    font-size: 20px;
+}
+
+.owner {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    align-content: center;
+}
+
+.owner .first img {
+    border: none;
+    height: 38px;
+    width: 38px;
+}
+
+.owner a img {
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.clicks {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px;
+    align-items: center;
+}
+
+.clicksgo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.clickinside {
+    background-color: white;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+
+.clickinside img {
+    height: 40px;
+    width: 40px ;
+    margin: 0px auto;
+}
+
+.recentoo {
+    background-color: rgb(241, 235, 235);
+    padding: 20px 90px;
+    margin-top: 50px; /* Adjust this value as needed */
+    border-radius: 30px 30px 0px 0px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: black;
+    max-height: 100%;
+    top: 200px;
+}
+
+
+.recent {
+    overflow-y: auto; /* Keep the content inside scrolling */
+    max-height: 100%; /* Restrict height of content for scrolling */
+    scrollbar-width: none;
+}
+.grow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grow h2 {
+    font-size: 25px;
+}
+
+.grow p {
+    color: gray;
+}
+
+.all {
+    display: flex;
+    gap: 10px;
+}
+
+.some {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 2px gray, -1px -1px 2px gray;
+    margin: 10px 0px;
+}
+
+.some a {
+    color: orange;
+    text-decoration: none;
+    text-align: center;
+}
+
+.grow2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grow2 .goat {
+    font-size: 23px;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+.ofinside {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.ofinside1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.machine {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.machine img {
+    height: 35px;
+    width: 35px;
+}
+
+.ininside h5 {
+    font-size: 18px;
+}
+
+.price {
+    text-align: right;
+}
+
+.price h5 {
+    font-size: 18px;
+    color: orange;
+}
+
+.price p {
+    color: gray;
+}
+
+.footer {
+    padding: 20px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(241, 235, 235);
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.foot img {
+    height: 30px;
+    width: 30px;
+}
+
+.foot1 {
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.foot1 img {
+    height: 35px;
+    width: 35px;
+}
+
+@media (max-width: 780px) {
+    header {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 40px 30px;
+    }
+
+    .money p {
+        font-size: 30px;
+    }
+
+    .money .good {
+        font-size: 14px;
+    }
+
+    .clicks {
+        padding: 5px 30px;
+    }
+
+    .clickinside {
+        height: 45px;
+        width: 45px;
+    }
+
+    .clickinside img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .recentoo {
+        padding: 20px 30px;
+    }
+
+    .grow h2 {
+        font-size: 20px;
+    }
+
+    .grow2 .goat {
+        margin-bottom: 0px;
+    }
+
+    .some {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .some a {
+        font-size: 9px;
+        padding: 0px;
+    }
+
+    .footer {
+        padding: 10px 30px;
+    }
+
+    .foot p {
+        font-size: 10px;
+    }
+
+}
